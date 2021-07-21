@@ -351,6 +351,9 @@ FPDF_CreateAnnot(FPDF_DOCUMENT document, FPDF_PAGE page, FPDF_FONT font, FPDF_AN
 
 FPDF_EXPORT bool FPDF_CALLCONV
 FPDF_GetPageAnnots(FPDF_PAGE page, std::vector<FPDF_ANNOT_ITEM>& items);
+
+FPDF_EXPORT void FPDF_CALLCONV
+FPDFRect_DeviceToPage(FPDF_PAGE page, FPDF_RECT& rect);
 #ifdef __cplusplus
 }
 #endif
